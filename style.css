@@ -1,0 +1,69 @@
+@font-face {
+    font-family: my-cool-font;
+    src: url(./fonts/YesevaOne-Regular.ttf);
+}
+
+
+.container {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+}
+
+/* Left */
+
+.left-side {
+    display: grid;
+    height: 100vh;
+    width: 35vw;
+    background-color: #cccccc;
+    background-image: url(./images/leftpic.jpg);
+    background-size: cover;
+    overflow: hidden;
+}
+
+.left-banner {
+    display: flex;
+    justify-content: center;
+    margin-top: 12vh;
+    width: 35vw;
+    height: 20vh;
+    background-color: rgba(255,255,255,0.5);
+    background-size: cover;
+    overflow: hidden;
+    
+}
+
+.brand {
+    display: flex;
+    align-items: center;
+    font-family: my-cool-font;
+    font-weight: bolder;
+    font-size: xx-large
+}
+
+/* Right */
+
+.right-side {
+    display: grid;
+    height: 100vh;
+    width: 65vw;
+}
+
+.greeting {
+    height: 30vh;
+    width: auto;
+    background-color: aqua;
+}
+
+.form {
+    height: 30vh;
+    width: auto;
+    background-color:brown;
+}
+
+.bottom {
+    height: 40vh;
+    width: auto;
+    background-color:pink;
+}
