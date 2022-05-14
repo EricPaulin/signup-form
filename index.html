@@ -18,51 +18,46 @@
         </div>
         <div id="right-container">
             <div id="r1">
-                <div class="g1">This is not a real online service, but it could be! Lorem ipsum dolor sit amet 
-                    consectetur, adipisicing elit. Necessitatibus, commodi! Sign up to get updates on the next drop. </div>
+                <div class="g1">The next wave of innovation is here. Sustainable, affordable, and ethically sourced. We strive 
+                                for quality that will last a lifetime. Sign up to get updates on the next drop. </div>
                 <div class="g2">Don't miss out.</div>
             </div>
             <div id="r2">
-            <form>
+            <form id="fill-form">
                 <fieldset>
-                    <legend>Let's Do This.</legend>
-                    <div>
-                        <label for="firstName">First Name:</label>
-                        <input type="text" id="firstName" placeholder="John" required>
-                        <span></span>
+                    <legend>Let's Do This</legend>
+                    <div class="fillA">
+                        <label for="firstName">First Name
+                            <input type="text" id="firstName" placeholder="John" required>
+                        </label>
+                        <label for="lastName">Last Name
+                            <input type="text" id="lastName" placeholder="Doe" required>
+                        </label>
                     </div>
-                    <div>
-                        <label for="lastName">Last Name:</label>
-                        <input type="text" id="lastName" placeholder="Doe" required>
-                        <span></span>
+                    <div class="fillB">
+                        <label for="user_email">Email Address
+                            <input type="email" id="user_email" name="email" placeholder="you@example.com" required>
+                        </label>
+                        <label for="phone_number">Phone Number
+                            <input type="tel" id="phone_number" name="phone_number" placeholder="(123)456-7890" required>
+                        </label>
                     </div>
-                    <div>
-                        <label for="user_email">Email Address:</label>
-                        <input type="email" id="user_email" name="email" placeholder="you@example.com" required>
-                        <span></span>
-                    </div>
-                    <div>
-                        <label for="phone_number">Phone Number:</label>
-                        <input type="tel" id="phone_number" name="phone_number" required>
-                        <span></span>
-                    </div>
-                    <div>
-                        <label for="user_password">Password:</label>
-                        <input type="password" id="user_password" name="password" required>
-                        <span></span>
-                    </div>
-                    <div>
-                    <label for="user_password">Confirm Password:</label>
-                    <input type="password" id="user_password" name="password" required>
-                    <span></span>
-                    </div>
-                    <div>
-                        <button type="submit">Create Account</button>
+                    <div class="fillC">
+                        <label for="password">Password
+                            <input type="password" name="password" id="password" placeholder="********" onkeyup='check();' required>
+                        </label>
+                        <label for="user_password">Confirm Password
+                            <input type="password" name="confirm_password" id="confirm_password" placeholder="********" onkeyup='check();' required>
+                            <span id='message'></span>
+                        </label>
                     </div>
                 </fieldset>
             </form>
             </div>
-            <div id="r3">Already have an account? <a href="#">Log in.</a></div>
+            <div id="r3">
+                <button type="submit" id="submit" form="fill-form" value="registration">Create Account</button>
+                <p>Already have an account? <a href="#">Log in.</a></p>
+            </div>
         </div>
     </div>
 </body>

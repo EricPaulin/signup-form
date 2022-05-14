@@ -70,49 +70,62 @@
     display: flex;
     justify-content: center;
     margin-bottom: 5vh;
+    font-size: 1.5rem;
 }
 
     /* Form Section */
 
 #r2 {
+    display: flex;
+    justify-content: center;
     height: 35vh;
     width: auto;
     background-color:floralwhite;
+}
+
+legend {
+    font-size: 1.3rem;
+}
+
+fieldset>* {
     display: flex;
-    align-items: center;
-    justify-content: center;
+    gap: 10rem;
+}
+fieldset>*>* {
+    display: flex;
+    flex-direction: column;
+    gap: 0.4rem;
 }
 
-form {
-    margin: 0 auto;
-    width: 400px;
-    padding: 1em;
-    border: none;
-}
-
-input + span {
+label {
     position: relative;
+    width: 15rem;
+    margin-bottom: 15px;
 }
-  
-input + span::before {
-    position: absolute;
-    right: -20px;
-    top: 5px;
-}
-  
-input:invalid + span::before {
-    content: '✖';
-    color: red;
-}
-  
-input:valid + span::before {
-    content: '✓';
-    color: green;
-}
-  
 
     /* Bottom Section */
 #r3 {
+    display: grid;
+    justify-items: center;
+    align-content: center;
     height: 35vh;
     width: auto;
+    font-size: x-large;
+}
+
+button[type='submit'] {
+    font-size: 1.5rem;
+    background-color: rgb(220, 214, 157);
+    color: white;
+    border: none;
+    border-radius: 7px;
+}
+
+button[type='submit']:hover {
+    background-color: rgb(219, 210, 124);
+}
+
+a {
+    text-decoration: none;
+    color: rgb(220, 214, 157);
 }
