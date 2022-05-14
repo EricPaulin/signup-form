@@ -9,17 +9,60 @@
     <title>Sign-up Form</title>
 </head>
 <body>
-    <div class="container">
-        <div class="left-side">
+    <div id="container">
+        <div id="left-container">
             <div class="left-banner">
                 <img src="./images/brand-logo.png" alt="fashion brand logo">
                 <div class="brand">suivant(e)</div>
             </div>
         </div>
-        <div class="right-side">
-            <div class="greeting"> Don't miss out.</div>
-            <div class="form"></div>
-            <div class="bottom"></div>
+        <div id="right-container">
+            <div id="r1">
+                <div class="g1">This is not a real online service, but it could be! Lorem ipsum dolor sit amet 
+                    consectetur, adipisicing elit. Necessitatibus, commodi! Sign up to get updates on the next drop. </div>
+                <div class="g2">Don't miss out.</div>
+            </div>
+            <div id="r2">
+            <form>
+                <fieldset>
+                    <legend>Let's Do This.</legend>
+                    <div>
+                        <label for="firstName">First Name:</label>
+                        <input type="text" id="firstName" placeholder="John" required>
+                        <span></span>
+                    </div>
+                    <div>
+                        <label for="lastName">Last Name:</label>
+                        <input type="text" id="lastName" placeholder="Doe" required>
+                        <span></span>
+                    </div>
+                    <div>
+                        <label for="user_email">Email Address:</label>
+                        <input type="email" id="user_email" name="email" placeholder="you@example.com" required>
+                        <span></span>
+                    </div>
+                    <div>
+                        <label for="phone_number">Phone Number:</label>
+                        <input type="tel" id="phone_number" name="phone_number" required>
+                        <span></span>
+                    </div>
+                    <div>
+                        <label for="user_password">Password:</label>
+                        <input type="password" id="user_password" name="password" required>
+                        <span></span>
+                    </div>
+                    <div>
+                    <label for="user_password">Confirm Password:</label>
+                    <input type="password" id="user_password" name="password" required>
+                    <span></span>
+                    </div>
+                    <div>
+                        <button type="submit">Create Account</button>
+                    </div>
+                </fieldset>
+            </form>
+            </div>
+            <div id="r3">Already have an account? <a href="#">Log in.</a></div>
         </div>
     </div>
 </body>
