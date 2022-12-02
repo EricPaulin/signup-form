@@ -1,3 +1,3 @@
 # signup-form
 
-Sign-ip Form for a fictional brand.
+Sign-up Form for a fictional brand.
